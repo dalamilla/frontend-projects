@@ -1,0 +1,96 @@
+body {
+  color: white;
+  background-color: #5dbcd2;
+  font-family: Helvetica, Arial;
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+}
+
+body::after {
+  content: "";
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+  background-image: url(assets/pattern.svg);
+}
+
+header {
+  margin: 10px auto ;
+  text-align: center;
+  padding: 0 0.625rem;
+  margin-bottom: 1.875rem;
+}
+
+#container {
+  background-color: #267689;
+  border-radius: 10px;
+  padding: 10px;
+  width: 50%;
+  margin: 10px auto;
+  position: relative;
+  z-index: 2;
+  opacity: 0.8;
+}
+
+label {
+  display: block;
+  margin-left: 10px;
+}
+
+input {
+  display: inline-block;
+  width: 50%;
+  margin-left: 10px;
+  height: 20px;
+}
+
+input[type=radio] {
+  display: inline-block;
+  margin-left: 10px;
+  width: 5%;
+  height: 20px;
+}
+
+input[type=checkbox] {
+  display: inline-block;
+  margin-left: 10px;
+  width: 5%;
+  height: 20px;
+}
+
+#dropdown {
+  width: 50%;
+  height: 20px;
+  display: block;
+  margin-left: 10px;
+}
+
+#comments {
+  margin-left: 10px;
+  display: block;
+  width: 50%;
+  height: 30px;
+}
+
+.form-text {
+    margin-left: 10px;
+}
+
+#submit {
+  margin: 20px auto;
+  display: block;
+  width: 50%;
+  background: #fa7578;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background: #755db0;
+}

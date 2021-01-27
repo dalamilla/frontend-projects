@@ -1,0 +1,187 @@
+/* global style */
+
+:root {
+  --bg-nf-color: #9dbbad;
+  --yel: #f3d559;
+  --button-bg-color: #dc5019;
+  --main-bg-color: #f1ebbd;
+  --text-color: #060605;
+  --text-color-price: #9dbbad;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  margin: 0;
+  font-family: Helvetica;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+} 
+
+.btn {
+  background-color: var(--button-bg-color);
+  color: #000;
+  border: 1px solid #000;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.price {
+  color: var(--text-color-price);
+  font-size: 18px;
+}
+
+/* header style */
+
+#header {
+  background-color: var(--bg-nf-color);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding: 5px 20px;
+}
+#logo {
+  display: flex;  
+  justify-content: center; 
+}
+#header-img {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+
+#nav-bar > ul {
+  margin: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;  
+}
+
+@media (max-width: 650px) {
+#nav-bar > ul {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+}
+
+#services {
+  margin-top: 30px;
+}
+
+.attribute {
+  display: flex;
+}
+
+.attribute .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+}
+
+.attribute .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+}
+
+#catalog {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 5px;
+  border: 1px solid #000;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+@media (max-width: 650px) {
+  #catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
+}
+
+/* main style */
+
+main {
+  max-width: 1000px;
+  width: 100%;
+  margin: 150px auto 100px;
+}
+
+h2 {
+  font-weight: 500;
+  text-align: center;
+}
+
+#tutorial {
+  display: flex;
+  justify-content: center;
+}
+  
+#contact-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+input[type=email] {
+  margin-left: 10px;
+}
+
+/* footer style */
+
+footer {
+  width: 100%;
+  padding: 5px;
+  background-color: var(--bg-nf-color);
+  font-size: 1.1em;
+}
+
+footer ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer li {
+  padding: 0 10px;
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}

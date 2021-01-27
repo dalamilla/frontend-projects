@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <header>
+    <h1 id="title">Bus Burger Survey Form</h1>
+    <p id="description">Thank you for your time</p>
+  </header>
+
+  <div id="container">
+    <form id="survey-form">
+      <label id="name-label">Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required />
+      <label id="email-label">Email</label>
+      <input id="email" type="email" placeholder="Enter your mail" required>
+      <label id="number-label">Age</label>
+      <input id="number" type="number" min="10" max="99" placeholder="Age">
+      <p class="form-text">Which Restaurant do you visit?</p>
+      <select id="dropdown" required>
+        <option disabled selected value>Restaurant</option>
+        <option value="chac-mool">Chac Mool</option>
+        <option value="tulum">Tulum</option>
+        <option value="tulum">Playacar</option>
+        <option value="tulum">Bacalar</option>
+      </select>
+      <p class="form-text">Would you recommend Bus Burger to a friend?</p>
+      <label>
+        <input name="recommend" value="definitely" type="radio" checked />Definitely</label>
+      <label>
+        <input name="recommend" value="maybe" type="radio" />Maybe</label>
+      <label>
+        <input name="recommend" value="not" type="radio" />Not</label>
+      <p class="form-text">Which is your favorite food of the menu? (Check all that apply)</p>
+      <label>
+        <input name="prefer" value="hotdog" type="checkbox" />Hot Dog</label>
+      <label>
+        <input name="prefer" value="burger" type="checkbox" />Burgers</label>
+      <label>
+        <input name="prefer" value="chips" type="checkbox" />Chips</label>
+      <label>
+        <input name="prefer" value="banderilla" type="checkbox" />Banderilla</label>
+      <p class="form-text">Any comments or suggestions?</p>
+      <textarea id="comments" name="comment" placeholder="Enter your comment here..."></textarea>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

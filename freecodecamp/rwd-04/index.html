@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentation Page</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <nav id="navbar">
+    <header>Elixir</header>
+    <a class="nav-link" href="#introduction">Introduction</a>
+    <a class="nav-link" href="#interactive_mode">Interactive mode</a>
+    <a class="nav-link" href="#running_scripts">Running scripts</a>
+    <a class="nav-link" href="#basic_types">Basic types</a>
+    <a class="nav-link" href="#basic_operators">Basic operators</a>
+    <a class="nav-link" href="#pattern_matching">Pattern matching</a>
+    <a class="nav-link" href="#reference">Reference</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="introduction">
+      <header>Introduction</header>
+      <p>In this tutorial, we are going to teach you about Elixir fundamentals - the language syntax, how to define
+        modules, how to manipulate the characteristics of common data structures, and more. This chapter will focus on
+        ensuring that Elixir is installed and that you can successfully run Elixir’s Interactive Shell, called IEx.</p>
+      <p>Installation</p>
+      <ul>
+        <li>macOs
+          <ul>
+            <li>Homebrew - Run: "brew install elixir"</li>
+          </ul>
+        </li>
+        <li>GNU/Linux</li>
+        <ul>
+          <li>Alpine Linux - Run: "apk add elixir"</li>
+          <li>Arch Linux - Run: "pacman -S elixir"</li>
+          <li>Fedora 22 - Run: "dnf install elixir"</li>
+          <li>Ubuntu - Run: "apt-get install elixir" </li>
+        </ul>
+        <li>BSD</li>
+        <ul>
+          <li> Run: "pkg install elixir"</li>
+        </ul>
+        <li>Windows</li>
+        <ul>
+          <li>Chocolate - Run: "cinst elixir"</li>
+        </ul>
+      </ul>
+    </section>
+    <section class="main-section" id="interactive_mode">
+      <header>Interactive mode</header>
+      <p>For now, let’s start by running iex (or iex.bat if you are on Windows PowerShell, where iex is a PowerShell
+        command) which stands for Interactive Elixir. In interactive mode, we can type any Elixir expression and get its
+        result. Let’s warm up with some basic expressions.</p>
+      <p>Open up iex and type the following expressions:</p>
+      <code>Erlang/OTP 21.0 [64-bit] [smp:2:2] [...]
+                Interactive Elixir (1.11.3) - press Ctrl+C to exit
+                iex(1)> 40 + 2
+                42
+                iex(2)> "hello" <> " world"
+                "hello world"
+              </code>
+      <p>Please note that some details like version numbers may differ a bit in your session; that’s not important. From
+        now on iex sessions will be stripped down to focus on the code. To exit iex press Ctrl+C twice.</p>
+    </section>
+    <section class="main-section" id="running_scripts">
+      <header>Running scripts</header>
+      <p>After getting familiar with the basics of the language you may want to try writing simple programs. This can be
+        accomplished by putting the following Elixir code into a file:</p>
+      <code>IO.puts "Hello world from Elixir"</code>
+      <p>Save it as simple.exs and execute it with elixir:</p>
+      <code>$ elixir simple.exs
+          Hello world from Elixir</code>
+      <p>Later on we will learn how to compile Elixir code and how to use the Mix build tool.</p>
+    </section>
+    <section class="main-section" id="basic_types">
+      <header>Basic types</header>
+      <p>In this chapter we will learn more about Elixir basic types: integers, floats, booleans, atoms, strings, lists
+        and tuples. Some basic types are:</p>
+      <code>iex> 1          # integer
+          iex> 0x1F       # integer
+          iex> 1.0        # float
+          iex> true       # boolean
+          iex> :atom      # atom / symbol
+          iex> "elixir"   # string
+          iex> [1, 2, 3]  # list
+          iex> {1, 2, 3}  # tuple</code>
+    </section>
+    <section class="main-section" id="basic_operators">
+      <header>Basic operators</header>
+      <p>Basic arithmetic</p>
+      <p>Open up iex and type the following expressions:</p>
+      <code>iex> 1 + 2
+          3
+          iex> 5 * 5
+          25
+          iex> 10 / 2
+          5.0</code>
+      <p>we saw Elixir provides +, -, *, / as arithmetic operators, plus the functions div/2 and rem/2 for integer
+        division and remainder.</p>
+      <p>Elixir also provides ++ and -- to manipulate lists:</p>
+      <code>iex> [1, 2, 3] ++ [4, 5, 6]
+          [1, 2, 3, 4, 5, 6]
+          iex> [1, 2, 3] -- [2]
+          [1, 3]</code>
+      <p>String concatenation is done with <>:</p>
+      <code>iex> "foo" <> "bar"
+          "foobar"</code>
+    </section>
+    <section class="main-section" id="pattern_matching">
+      <header>Pattern matching</header>
+      <p>In this chapter, we will show how the = operator in Elixir is actually a match operator and how to use it to
+        pattern match inside data structures. Finally, we will learn about the pin operator ^ used to access previously
+        bound values.</p>
+      <p>The match operator</p>
+      <p>We have used the = operator a couple times to assign variables in Elixir:</p>
+      <code>iex> x = 1
+          1
+          iex> x
+          1</code>
+      <p>Pattern matching</p>
+      <p>The match operator is not only used to match against simple values, but it is also useful for destructuring
+        more complex data types. For example, we can pattern match on tuples:</p>
+      <code>iex> {a, b, c} = {:hello, "world", 42}
+          {:hello, "world", 42}
+          iex> a
+          :hello
+          iex> b
+          "world"</code>
+    </section>
+    <section class="main-section" id="reference">
+      <header>Reference</header>
+      <ul>
+        <li>Getting Started: <a href="https://elixir-lang.org/getting-started/introduction.html" target="_blank">elixir
+        </li>
+      </ul>
+    </section>
+  </main>
+
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
