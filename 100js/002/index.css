@@ -1,0 +1,26 @@
+div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  background-color: white;
+  width: 50%;
+  margin: none;
+  outline: none;
+  border: black solid 2px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+input:hover {
+  background-color: grey;
+  color: white;
+  outline: none;
+}

@@ -1,0 +1,24 @@
+input {
+  background-color: white;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: black solid 2px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+input:hover {
+  background-color: grey;
+  color: white;
+  outline:none;
+}
+
+h1 {
+  left: 45%;
+  top: 43%;
+  position: absolute;   
+}

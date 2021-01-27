@@ -1,0 +1,46 @@
+body {
+  background-color: #D9F5B7;
+}
+
+#container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #CCC189;
+  color: #552646;
+  width: 40%;
+}
+
+#container input {
+  width: auto;
+  background-color: #DF7561;
+  color: #552646;
+  padding: 10px;
+  align-self: center;
+  border: none;
+  outline: none;
+  font-size: 1.1em;
+  margin: 5px;
+}
+
+#container input:hover {
+  background-color: #7F566B;
+  color: #DF7561;
+}
+
+#container p {
+  margin: 20px;
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+#container h3 {
+  align-self: flex-end;
+  margin: 5px;
+  font-size: 1.4em;
+}
