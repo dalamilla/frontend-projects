@@ -1,0 +1,66 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+header {
+  width: 100%;
+  height: 5vh;
+  background-color: #555753;
+  text-align: center;
+  color: #D3D7CF;
+}
+header i {
+  font-size: 3em;
+}
+
+main {
+ width: 100%;
+ height: 95vh;
+ display: flex;
+ right: 10px;
+}
+
+main #mk-editor {
+  width: 50%;
+  height: 100%;
+}
+
+#mk-editor #editor {
+  resize: none;
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+  background-color: #380C2A;
+  color: #D3D7CF;
+  overflow: auto;
+}
+
+main #preview {
+  height: 100%;
+  width: 50%;
+  background-color: #EEEEEC;
+  overflow: auto;
+}
+
+@media screen and (max-width: 815px) {
+
+  header i {
+    font-size: 2em;
+  }
+
+  main {
+    flex-direction: column;
+  }
+  
+  main #mk-editor {
+    width: 100%;
+    height: 50%;
+  }
+
+  main #preview {
+    width: 100%;
+    height: 50%;
+  }
+}
