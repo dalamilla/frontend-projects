@@ -139,3 +139,25 @@ body {
   display: flex;
   color: #e0635d;
 }
+
+@media screen and (max-width: 815px) {
+
+  #drum-machine {
+    flex-direction: column-reverse;
+    width: 50vh;
+    height: 75vh;
+  }
+
+  .pad-area {
+    width: 90%;
+    height: 90%;
+  }
+  .panel-area {
+    width: 90%;
+    height: 90%;
+  }
+  .control {
+    width: 100%;
+    height: 30%;
+  }
+}
